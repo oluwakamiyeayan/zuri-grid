@@ -1,0 +1,50 @@
+@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+main{
+    
+    display: grid;
+    grid-template-areas: 
+    'a b c'
+    /* 'a b c' */
+    ;
+    gap: 0.5px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: hsla(0, 0%, 100%, 0.75);
+    /* display: flex;  */
+}
+body{
+    display: flex;
+    place-items: center;
+    font-family: 'Big Shoulders Display';
+    /* have forgotten all about the function and usage of view port */
+    min-height: 30vh;
+    idth:3 30vw;
+    /* font-weight: 700; */
+}
+main div.item{
+    padding: 2rem;
+    text-align: left;
+    border-radius: 0.3rem;
+
+}
+main div.item img{
+    /* display: flex; */
+    /* justify-content: left; */
+    /* padding: 0.5rem; */
+    /* border: 2px red solid; */
+
+}
+.item-a{
+    background-color: hsl(31, 77%, 52%);
+    grid-area: a;
+    border: 2px red solid;
+
+}
+.item-b{
+    background-color: hsl(184, 100%, 22%);
+    grid-area: b;
+}
+.item-c{
+    background-color: hsl(179, 100%, 13%);
+    grid-area: c;
+}
